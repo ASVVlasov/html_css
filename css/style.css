@@ -10,24 +10,40 @@ a {
     text-decoration: none;
 }
 
-.menu {
+.header {
     background-color: #e0e0e0;
+    width: 100%;
 }
 
-.menu li {
-    text-align: center;
+.header tr td:first-child {
+    width: 45%;
+    height: 50px;
+    background: url(../img/logo.png) 90% center no-repeat;
 }
 
-.menu a {
+.menu li a {
     color: #1A237E;
     font-weight: 600;
     line-height: 25px;
 }
 
+.menu li a:hover {
+    color: #009688;
+}
+
+.menu li a:active {
+    color: #F44336;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+}
 h1,
 h2,
 h3 {
-    text-align: center;
     color: black;
     background-color: #eaeaea;
 }
@@ -50,8 +66,14 @@ h3 {
 }
 
 .car_title ~ a img {
-    outline: 1px solid #1A237E;
+    outline: 2px solid #C5CAE9;
+    outline-style: hidden;
+    border-radius: 2px;
     width: 33%;
+}
+
+.car_title ~ a img:hover {
+    outline: none;
 }
 
 .shortdescription {
@@ -66,6 +88,34 @@ h3 {
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+}
+
+.shortdescription:first-letter,
+.fulldescription:first-letter{
+    font-family: "Verdana", sans-serif;
+    color: #1A237E;
+    font-size: 32px;
+}
+
+.complect_table {
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.complect_table tr td {
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.complect_table tr:first-child td {
+    text-align: center;
+    padding: 10px;
+    height: 45px;
+    font-size: 120%;
 }
 
 .specifications-title {
@@ -101,20 +151,40 @@ h3 {
     width: 50%;
     line-height: 30px;
     font-weight: 600;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+#subscribe_form input:focus,
+#subscribe_form textarea:focus {
+    color: #2196F3;
+    outline: 1px solid #2196F3;
+    background: #BBDEFB;
 }
 
 #subscribe_form .btn {
-    width: 45%;
-    font-size: 24px;
+    width: 35%;
+    font-size: 16px;
+    line-height: 18px;
     background: #efefef;
 }
 
+#subscribe_form .btn.reset {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#subscribe_form .btn.success {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
 #subscribe_form .success {
-    color: green;
+    color: #009688;
 }
 
 #subscribe_form .reset {
-    color: red;
+    color: #F44336;
 }
 
 .address-list li {
