@@ -104,33 +104,81 @@ h3 {
     text-align: center;
 }
 
-.car_title ~ a img {
-    outline: 2px solid #C5CAE9;
-    outline-style: hidden;
-    border-radius: 2px;
-    width: 33%;
+.description * {
+    box-sizing: border-box;
 }
 
-.car_title ~ a img:hover {
+.description h3 {
+    margin-left: 30%;
+}
+
+.description .photos {
+    margin-right: 30px;
+    width: 30%;
+}
+
+.description .photos a {
+    padding: 5px;
+    float: left;
+    display: block;
+    width: 50%;
+}
+
+.description .photos a:first-child {
+    padding-bottom: 0;
+    width: 100%;
+}
+
+.description .photos img {
+    outline: 5px solid #eaeaea;
+    border-radius: 2px;
+    width: 100%;
+}
+
+.description .photos img:hover {
     outline: none;
 }
 
-.shortdescription {
+.btn {
+    cursor: pointer;
+    outline: 0;
+    border: none;
+    margin: 0;
+    padding: 0;
+    line-height: 36px;
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2),
+        0 2px 2px 0 rgba(0, 0, 0, .14),
+        0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+.btn:hover {
+    background: rgba(0, 0, 0, .04);
+}
+
+.btn:active {
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .2),
+        0 8px 10px 1px rgba(0, 0, 0, .14),
+        0 3px 14px 2px rgba(0, 0, 0, .12);
+}
+
+.short_text {
     color: #707070;
     font-size: 14px;
     font-style: italic;
     line-height: 16px;
 }
 
-.fulldescription {
+.full_text {
     color: #484343;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
 }
 
-.shortdescription:first-letter,
-.fulldescription:first-letter {
+.short_text:first-letter,
+.full_text:first-letter {
     font-family: "Verdana", sans-serif;
     color: #1A237E;
     font-size: 32px;
@@ -167,17 +215,20 @@ h3 {
     list-style-image: url(../img/marker.png);
 }
 
-.car-list li {
-    text-align: center;
-    border: 1px dashed #e0e0e0;
+.car-list * {
+    box-sizing: border-box;
 }
 
-.car-list a {
+.car-list .car-item {
+    display: block;
+    float: left;
+    width: 33.3%;
+    text-align: center;
     color: #3F51B5;
 }
 
-.car-list img {
-    width: 300px;
+.car-list .car-item img {
+    width: 100%;
 }
 
 #subscribe_form {
@@ -194,7 +245,7 @@ h3 {
     text-transform: capitalize;
 }
 
-#subscribe_form input:focus,
+#subscribe_form input:focus:not(.btn),
 #subscribe_form textarea:focus {
     color: #2196F3;
     outline: 1px solid #2196F3;
@@ -203,9 +254,6 @@ h3 {
 
 #subscribe_form .btn {
     width: 35%;
-    font-size: 16px;
-    line-height: 18px;
-    background: #efefef;
 }
 
 #subscribe_form .btn.reset {
