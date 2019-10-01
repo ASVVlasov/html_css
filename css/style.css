@@ -1,5 +1,7 @@
 body {
     background-color: #f8f8f8;
+    padding: 0;
+    margin: 0;
 }
 
 ul {
@@ -10,21 +12,57 @@ a {
     text-decoration: none;
 }
 
-.header {
-    background-color: #e0e0e0;
-    width: 100%;
+.container {
+    width: 90%;
+    margin: 0 auto;
 }
 
-.header tr td:first-child {
-    width: 45%;
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.header {
+    background: #eaeaea;
+    height: 100px;
+}
+
+.header .logo {
+    background: url(../img/logo.png) center center no-repeat;
+    width: 50px;
     height: 50px;
-    background: url(../img/logo.png) 90% center no-repeat;
+    margin: 25px 0 0 50px;
+}
+
+.header .menu {
+    margin: 25px 50px 0 0;
+}
+
+.menu {
+    font-size: 0;
+}
+
+.menu li {
+    display: inline-block;
 }
 
 .menu li a {
+    padding: 0 20px;
+    display: block;
+    height: 50px;
     color: #1A237E;
     font-weight: 600;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 50px;
 }
 
 .menu li a:hover {
@@ -41,6 +79,7 @@ h3,
 h4 {
     text-align: center;
 }
+
 h1,
 h2,
 h3 {
@@ -91,7 +130,7 @@ h3 {
 }
 
 .shortdescription:first-letter,
-.fulldescription:first-letter{
+.fulldescription:first-letter {
     font-family: "Verdana", sans-serif;
     color: #1A237E;
     font-size: 32px;
@@ -146,7 +185,7 @@ h3 {
 }
 
 #subscribe_form input,
-#subscribe_form textarea{
+#subscribe_form textarea {
     color: #1A237E;
     width: 50%;
     line-height: 30px;
