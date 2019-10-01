@@ -32,8 +32,28 @@ a {
 }
 
 .header {
+    position: relative;
     background: #eaeaea;
     height: 100px;
+}
+
+.header > * {
+    position: relative;
+    z-index: 2;
+}
+
+.header:before {
+    display: block;
+    content: "";
+    background: url(../img/corolla-1.jpg) 0 55% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.3;
 }
 
 .header .logo {
@@ -240,6 +260,8 @@ h3 {
 }
 
 .car-list .car-item-wrap .car-item p {
+    height: 150px;
+    overflow: hidden;
     padding: 10px;
     margin: 0;
 }
