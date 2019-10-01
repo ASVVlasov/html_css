@@ -1,0 +1,216 @@
+body {
+    background-color: #f8f8f8;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: #e0e0e0;
+    width: 100%;
+}
+
+.header tr td:first-child {
+    width: 45%;
+    height: 50px;
+    background: url(../img/logo.png) 90% center no-repeat;
+}
+
+.menu li a {
+    color: #1A237E;
+    font-weight: 600;
+    line-height: 25px;
+}
+
+.menu li a:hover {
+    color: #009688;
+}
+
+.menu li a:active {
+    color: #F44336;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+}
+h1,
+h2,
+h3 {
+    color: black;
+    background-color: #eaeaea;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.main_photos {
+    text-align: center;
+}
+
+.main_photos img {
+    width: 20%;
+}
+
+.marketdescription {
+    text-align: center;
+}
+
+.car_title ~ a img {
+    outline: 2px solid #C5CAE9;
+    outline-style: hidden;
+    border-radius: 2px;
+    width: 33%;
+}
+
+.car_title ~ a img:hover {
+    outline: none;
+}
+
+.shortdescription {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.fulldescription {
+    color: #484343;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.shortdescription:first-letter,
+.fulldescription:first-letter{
+    font-family: "Verdana", sans-serif;
+    color: #1A237E;
+    font-size: 32px;
+}
+
+.complect_table {
+    width: 100%;
+    border-collapse: collapse;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.complect_table tr td {
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.complect_table tr:first-child td {
+    text-align: center;
+    padding: 10px;
+    height: 45px;
+    font-size: 120%;
+}
+
+.specifications-title {
+    color: #1A237E;
+}
+
+.specifications-list li {
+    color: #3F51B5;
+    height: 35px;
+    list-style-image: url(../img/marker.png);
+}
+
+.car-list li {
+    text-align: center;
+    border: 1px dashed #e0e0e0;
+}
+
+.car-list a {
+    color: #3F51B5;
+}
+
+.car-list img {
+    width: 300px;
+}
+
+#subscribe_form {
+    text-align: center;
+}
+
+#subscribe_form input,
+#subscribe_form textarea{
+    color: #1A237E;
+    width: 50%;
+    line-height: 30px;
+    font-weight: 600;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+#subscribe_form input:focus,
+#subscribe_form textarea:focus {
+    color: #2196F3;
+    outline: 1px solid #2196F3;
+    background: #BBDEFB;
+}
+
+#subscribe_form .btn {
+    width: 35%;
+    font-size: 16px;
+    line-height: 18px;
+    background: #efefef;
+}
+
+#subscribe_form .btn.reset {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#subscribe_form .btn.success {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#subscribe_form .success {
+    color: #009688;
+}
+
+#subscribe_form .reset {
+    color: #F44336;
+}
+
+.address-list li {
+    text-align: center;
+    list-style-position: inside;
+    height: 30px;
+    line-height: 30px;
+}
+
+.address-list .telephone {
+    list-style-image: url(../img/phone.png);
+}
+
+.address-list .address {
+    list-style-image: url(../img/address.png);
+}
+
+.address-list .email {
+    list-style-image: url(../img/email.png);
+}
+
+
+.footer {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #1A237E;
+    background: #e0e0e0;
+}
