@@ -28,8 +28,26 @@ body {
     position: relative;
 }
 
+.slider:before {
+    content: "";
+    display: table;
+}
+
 .header {
-    padding-top: 63px;
+    height: 90px;
+    position: sticky;
+    position: -web-kit-sticky;
+    top: 0;
+    z-index: 20;
+    background-color: #f9f9f9;
+}
+
+.nav {
+    padding-top: 65px;
+}
+
+.logo {
+    float: left;
 }
 
 .menu {
@@ -42,12 +60,17 @@ body {
 }
 
 .menu-link {
-    padding: 10px 13px;
+    display: block;
+    padding: 0 13px 5px 13px;
     color: #8c8c8c;
     font-size: 14px;
     font-weight: 300;
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.menu-search {
+    padding: 0;
 }
 
 .menu-link:hover {
@@ -61,7 +84,7 @@ body {
 }
 
 .slider-text {
-    margin-top: 283px;
+    margin-top: 373px;
 }
 
 .slider-trending {
@@ -548,6 +571,10 @@ body {
     font-size: 14px;
     font-weight: 300;
     padding-left: 19px;
+}
+
+.subscribe-news:focus {
+    outline: none;
 }
 
 .submit {
