@@ -3,24 +3,44 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <div class="container">
-        <header class="header padding-site">
-            <nav class="nav clearfix">
-                <a href="#" class="logo"><img src="img/logo.svg" alt="logo"></a>
-                <ul class="menu">
-                    <li class="menu-list"><a href="#" class="menu-link menu-link-active">HOME</a></li>
-                    <li class="menu-list"><a href="#product" class="menu-link">PRODUCTS</a></li>
-                    <li class="menu-list"><a href="#" class="menu-link">HISTORY</a></li>
-                    <li class="menu-list"><a href="#" class="menu-link">SHOWROOM</a></li>
-                    <li class="menu-list"><a href="#contact" class="menu-link">CONTACT</a></li>
-                    <li class="menu-list"><a href="#" class="menu-link menu-search"><img src="img/search.svg" alt="search"></a></li>
-                </ul>
+        <header class="header padding-site bg-gray">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a href="#" class="navbar-brend"><img src="img/logo.svg" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PRODUCTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">HISTORY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SHOWROOM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="img/search.svg" alt="search"></a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
         </header>
         <section class="slider padding-site">
@@ -47,8 +67,8 @@
                     <span>explore all</span><img src="img/arrow.svg" alt="arrow">
                 </a>
             </header>
-            <div class="product-list clearfix">
-                <div class="product-item">
+            <div class="row product-list">
+                <div class="col-12 col-md-6 col-lg-3">
                     <img src="img/features/product-1.jpg" alt="">
                     <div class="product-item-hover">
                         <a href="#" class="product-item-circle"><img src="img/arrow.svg" alt="arrow"></a>
@@ -56,25 +76,37 @@
                         <p class="product-item-content">Seat and back with upholstery made of&nbsp;cold cure foam.<br> Steel frame, available in&nbsp;matt powder-coated black or&nbsp;highly polished chrome.</p>
                     </div>
                 </div>
-                <div class="product-item"><img src="img/features/product-2.jpg" alt="product"></div>
-                <div class="product-item"><img src="img/features/product-3.jpg" alt="product"></div>
-                <div class="product-item"><img src="img/features/product-4.jpg" alt="product"></div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="img/features/product-2.jpg" alt="product">
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="img/features/product-3.jpg" alt="product">
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <img src="img/features/product-4.jpg" alt="product">
+                </div>
             </div>
         </section>
-        <section class="promo clearfix">
-            <div class="promo-item promo-1">
-                <p class="promo-trending">TRENDING</p>
-                <h2 class="promo-h2">Fishnet Chair</h2>
-                <p class="promo-content">Seat and back with upholstery made of&nbsp;cold cure foam. Steel frame, available in&nbsp;matt powder-coated black<br>
-                    or&nbsp;highly polished chrome.</p>
-                <a href="#" class="button"><span>Order Us</span><img class="arrow" src="img/arrow.svg" alt="arrow"></a>
-            </div>
-            <div class="promo-item promo-2">
-                <p class="promo-trending">TRENDING</p>
-                <h2 class="promo-h2">Fishnet Chair</h2>
-                <p class="promo-content">Seat and back with upholstery made of&nbsp;cold cure foam. Steel frame, available in&nbsp;matt powder-coated black<br>
-                    or&nbsp;highly polished chrome.</p>
-                <a href="#" class="button"><span>Order Us</span><img class="arrow" src="img/arrow.svg" alt="arrow"></a>
+        <section class="promo">
+            <div class="row">
+                <div class="col-12 col-lg-6 pr-0">
+                    <div class="promo-item promo-1">
+                        <p class="promo-trending">TRENDING</p>
+                        <h2 class="promo-h2">Fishnet Chair</h2>
+                        <p class="promo-content">Seat and back with upholstery made of&nbsp;cold cure foam. Steel frame, available in&nbsp;matt powder-coated black<br>
+                            or&nbsp;highly polished chrome.</p>
+                        <a href="#" class="button"><span>Order Us</span><img class="arrow" src="img/arrow.svg" alt="arrow"></a>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 pl-0">
+                    <div class="promo-item promo-2">
+                        <p class="promo-trending">TRENDING</p>
+                        <h2 class="promo-h2">Fishnet Chair</h2>
+                        <p class="promo-content">Seat and back with upholstery made of&nbsp;cold cure foam. Steel frame, available in&nbsp;matt powder-coated black<br>
+                            or&nbsp;highly polished chrome.</p>
+                        <a href="#" class="button"><span>Order Us</span><img class="arrow" src="img/arrow.svg" alt="arrow"></a>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="product" class="trending-product padding-site">
@@ -84,15 +116,25 @@
                     <span>explore all</span><img src="img/arrow.svg" alt="arrow">
                 </a>
             </div>
-            <div class="trending-product-list clearfix">
-                <div class="trending-product-item"><img src="img/trending-product/product-11.jpg" alt="product"></div>
-                <div class="trending-product-item"><img src="img/trending-product/product-21.jpg" alt="product"></div>
-                <div class="trending-product-item"><img src="img/trending-product/product-31.jpg" alt="product"></div>
-            </div>
-            <div class="trending-product-list clearfix">
-                <div class="trending-product-item"><img src="img/trending-product/product-41.jpg" alt="product"></div>
-                <div class="trending-product-item"><img src="img/trending-product/product-5.jpg" alt="product"></div>
-                <div class="trending-product-item"><img src="img/trending-product/product-6.jpg" alt="product"></div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="img/trending-product/product-11.jpg" alt="product">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="img/trending-product/product-21.jpg" alt="product">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="img/trending-product/product-31.jpg" alt="product">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="img/trending-product/product-41.jpg" alt="product">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="img/trending-product/product-5.jpg" alt="product">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="img/trending-product/product-6.jpg" alt="product">
+                </div>
             </div>
         </section>
         <section class="hot-slider padding-site">
@@ -111,27 +153,39 @@
             </div>
         </section>
         <section class="exclusive-product padding-site clearfix">
-            <div class="exclusive-product-item-lg">
-                <p class="exclusive-trending">TRENDING</p>
-                <h2 class="exclusive-h2">Fishnet Chair</h2>
-                <p class="exclusive-content">Seat and back with upholstery made of&nbsp;cold cure foam. Steel frame, available in&nbsp;matt powder-coated black<br>
-                    or&nbsp;highly polished chrome.</p>
-                <a href="#" class="button"><span>Order Us</span><img class="arrow" src="img/arrow.svg" alt="arrow"></a>
-            </div>
-            <div class="exclusive-product-list">
-                <div class="exclusive-product-item-sm">
-                    <img src="img/exclusive/product-2-sm.jpg" alt="product">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <div class="exclusive-product-item-lg">
+                        <p class="exclusive-trending">TRENDING</p>
+                        <h2 class="exclusive-h2">Fishnet Chair</h2>
+                        <p class="exclusive-content">Seat and back with upholstery made of&nbsp;cold cure foam. Steel frame, available in&nbsp;matt powder-coated black<br>
+                            or&nbsp;highly polished chrome.</p>
+                        <a href="#" class="button"><span>Order Us</span><img class="arrow" src="img/arrow.svg" alt="arrow"></a>
+                    </div>
                 </div>
-                <div class="exclusive-product-item-sm">
-                    <img src="img/exclusive/product-4-sm.jpg" alt="product">
-                </div>
-            </div>
-            <div class="exclusive-product-list">
-                <div class="exclusive-product-item-sm">
-                    <img src="img/exclusive/product-3-sm.jpg" alt="product">
-                </div>
-                <div class="exclusive-product-item-sm">
-                    <img src="img/exclusive/product-5-sm.jpg" alt="product">
+                <div class="col-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <div class="exclusive-product-item-sm">
+                                <img src="img/exclusive/product-2-sm.jpg" alt="product">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="exclusive-product-item-sm">
+                                <img src="img/exclusive/product-4-sm.jpg" alt="product">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="exclusive-product-item-sm">
+                                <img src="img/exclusive/product-3-sm.jpg" alt="product">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <div class="exclusive-product-item-sm">
+                                <img src="img/exclusive/product-5-sm.jpg" alt="product">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -145,31 +199,35 @@
             <a href="#"><img src="img/app-store.jpg" alt="app store"></a>
             <a href="#"><img src="img/google-play.jpg" alt="google play"></a>
         </section>
-        <section id="contact" class="contacts padding-site">
-            <div class="clearfix">
-                <div class="contact-detail contact-us">
+        <section class="contacts padding-site">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3 contact-us">
                     <div class="contact-h2">Contact Us</div>
                     <a href="#" class="contact-link">132A Bridge Road Richmond VIC
-                        Australia.
-                    </a> <br>
+                        Aus</a>
                     <a href="#" class="contact-link">Talk to&nbsp;us on&nbsp;1300&nbsp;132
                         info@interior.com</a>
                 </div>
-                <div class="contact-detail contact-useful">
-                    <div class="contact-h2">Useful Information</div>
-                    <div class="contact-detail">
-                        <a href="#" class="contact-link">Sales term</a>
-                        <a href="#" class="contact-link">Customer care</a>
-                        <a href="#" class="contact-link">Delivery</a>
+                <div class="col-12 col-md-8 col-lg-5 contact-useful">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="contact-h2">Useful Information</div>
+                        </div>
                     </div>
-
-                    <div class="contact-detail">
-                        <a href="#" class="contact-link">Architect accounts</a>
-                        <a href="#" class="contact-link">Careers</a>
-                        <a href="#" class="contact-link">Exchanges &amp;&nbsp;returns</a>
+                    <div class="row">
+                        <div class="col-5">
+                            <a href="#" class="contact-link">Sales term</a>
+                            <a href="#" class="contact-link">Customer care</a>
+                            <a href="#" class="contact-link">Delivery</a>
+                        </div>
+                        <div class="col-7">
+                            <a href="#" class="contact-link">Architect accounts</a>
+                            <a href="#" class="contact-link">Careers</a>
+                            <a href="#" class="contact-link">Exchanges &amp;&nbsp;returns</a>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-detail">
+                <div class="col-12 col-md-12 col-lg-4 contact-subscribe">
                     <div class="contact-h2">Let&rsquo;s Stay in&nbsp;Touch!</div>
                     <p class="subscribe-text">Suscribe to&nbsp;know about our latest news, products and special offers just for suscribers.</p>
                     <form action="#" class="subscribe-form">
@@ -179,18 +237,30 @@
                     </form>
                 </div>
             </div>
-            <footer class="footer">
-                <div class="copyright">&copy;&nbsp;Copyright&nbsp;&mdash; INTERIOR 2016. All Rights Reserved.</div>
-                <div class="social">
-                    <a href="#" class="facebook"></a>
-                    <a href="#" class="twitter"></a>
-                    <a href="#" class="google"></a>
-                    <a href="#" class="pinterest"></a>
+            <div class="row footer">
+                <div class="col-12 col-md-12 col-lg-5">
+                    <div class="copyright">&copy;&nbsp;Copyright&nbsp;&mdash; INTERIOR 2016. All Rights Reserved.</div>
                 </div>
-                <div class="privacy">Terms &amp;&nbsp;Conditions&nbsp;/ Privacy policy &amp;&nbsp;Cookies</div>
-            </footer>
+                <div class="col-12 col-md-12 col-lg-2">
+                    <div class="social">
+                        <a href="#" class="facebook"></a>
+                        <a href="#" class="twitter"></a>
+                        <a href="#" class="google"></a>
+                        <a href="#" class="pinterest"></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-5">
+                    <div class="privacy">Terms &amp;&nbsp;Conditions&nbsp;/ Privacy policy &amp;&nbsp;Cookies</div>
+                </div>
+            </div>
         </section>
     </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
